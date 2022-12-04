@@ -23,10 +23,9 @@ raw_input = file.read().splitlines()
 input1 = [[l[:len(l)//2], l[len(l)//2:]] for l in raw_input]
 input1 = [intersect(sack) for sack in input1]
 input1 = [char_pos(c) for c in input1]
-out1 = sum(input1)
-print('1. What is the sum of the priorities of those item types? => ', out1)
+out = sum(input1)
+print('1. What is the sum of the priorities of those item types? =>', out)
 # End part I
-
 # Your puzzle answer was 7850.
 
 # Part II solution
@@ -40,10 +39,7 @@ for i in range(1, len(raw_input)):
         temp = [raw_input[i]]
 groups.append(temp)
 groups = [char_pos(get_badge(g)) for g in groups]
-out2 = sum(groups)
-print("2. What is the sum of the priorities of those item types? => ", out2)
-
-
+out = sum(groups)
+print('2. What is the sum of the priorities of those item types? =>', out)
 # End part II
-
 # Your puzzle answer was 2581.

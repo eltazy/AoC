@@ -21,17 +21,14 @@ raw_input = file.read().splitlines()
 raw_input = [l.split(',') for l in raw_input]
 raw_input = [[get_ranges(e) for e in pair] for pair in raw_input]
 input1 = [total_overlap(pair[0], pair[1]) for pair in raw_input]
-out1 = len([b for b in input1 if b])
-print('1. In how many assignment pairs does one range fully contain the other? =>', out1)
+out = len([b for b in input1 if b])
+print('1. In how many assignment pairs does one range fully contain the other? =>', out)
 # End part I
-
 # Your puzzle answer was 441.
 
 # Part II solution
 input2 = [some_overlap(pair[0], pair[1]) for pair in raw_input]
-out2 = len([b for b in input2 if b])
-print("2. In how many assignment pairs do the ranges overlap? =>", out2)
-
+out = len([b for b in input2 if b])
+print('2. In how many assignment pairs do the ranges overlap? =>', out)
 # End part II
-
 # Your puzzle answer was 861.
