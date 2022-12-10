@@ -21,4 +21,4 @@ print('1. How many characters need to be processed before the first start-of-pac
 out = get_marker_pos(stream, 14)
 print('2. How many characters need to be processed before the first start-of-message marker is detected? =>', out)
 # End part II
-# Your puzzle answer was .
+# Your puzzle answer was 3534.
