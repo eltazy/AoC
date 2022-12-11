@@ -1,4 +1,4 @@
-# https://adventofcode.com/2022/day/6
+# https://adventofcode.com/2022/day/7
 def get_folder_size(folder):
     return sum([f.size if f.type == 'file' else get_folder_size(folders[f.path]) for f in folder.children])
 
